@@ -1,0 +1,64 @@
+name: ui_ux_designs
+description: "A Flutter project design to replicate some of the UI/UX designs found online."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  audioplayers: ^6.1.0
+  cached_network_image: 3.3.1
+  connectivity_plus: ^6.0.5
+  dartz: ^0.10.1
+  dio: ^5.4.3+1
+  dio_logs_manager: ^0.3.0
+  envied: ^0.5.4+1
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.1
+  flutter_svg: 2.0.10+1
+  get: 4.6.6
+  get_storage: 2.1.1
+  infinite_scroll_pagination: 4.0.0
+  internet_connection_checker: ^2.0.0
+  intl: 0.19.0
+  loader_overlay: 4.0.0
+  logger: ^2.3.0
+  package_info_plus: ^8.0.0
+  palette_generator: ^0.3.3+4
+  permission_handler: 11.3.1
+  pretty_dio_logger: ^1.4.0
+  share_plus: ^9.0.0
+  shared_preferences: ^2.2.3
+  shimmer: 3.0.0
+  smartstruct: 1.4.0
+  url_launcher: ^6.2.6
+
+dev_dependencies:
+  build_runner: ^2.4.11
+  envied_generator: ^0.5.4+1
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+  smartstruct_generator: 1.4.0
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/common/app/constants/
+  filename: assets.dart
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+    - assets/svgs/
