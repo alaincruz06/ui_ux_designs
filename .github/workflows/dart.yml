@@ -38,4 +38,4 @@ jobs:
         with:
           name: release-apk
           overwrite: true
-          path: build/app/outputs/apk/release/ui_ux_designs.apk
+          path: build/app/outputs/apk/release/app-release.apk
