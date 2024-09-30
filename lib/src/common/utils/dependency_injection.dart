@@ -1,9 +1,6 @@
-import 'package:connectivity_plus/connectivity_plus.dart';
-
 //Packages
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:logger/logger.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:ui_ux_designs/src/1_pokedex/data/datasources/pokedex_provider_impl.dart';
@@ -18,8 +15,6 @@ class DependencyInjection {
     await _initPackageInfo();
 
     _setupLogger();
-
-    _setupConnection();
 
     _setupMappers();
 
@@ -40,15 +35,6 @@ class DependencyInjection {
         ),
         fenix: true,
         tag: 'ControllerLogger',
-      );
-  }
-
-  static void _setupConnection() {
-    Get
-      ..put<Connectivity>(Connectivity(), permanent: true)
-      ..put<InternetConnectionChecker>(
-        InternetConnectionChecker(),
-        permanent: true,
       );
   }
 
