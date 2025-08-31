@@ -33,13 +33,13 @@ class DioHttpClientImpl implements DioHttpClient {
         return status.toString().startsWith('20');
       };
     if (!kReleaseMode) {
-      dio.interceptors.add(
+      /*    dio.interceptors.add(
         PrettyDioLogger(
           requestBody: true,
           requestHeader: true,
           responseBody: true,
         ),
-      );
+      ); */
       dio.interceptors.add(
         InterceptorsWrapper(
           onRequest: (options, handler) async {

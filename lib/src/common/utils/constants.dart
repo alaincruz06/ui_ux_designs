@@ -19,6 +19,9 @@ const String defaultLanguage = 'es';
 const String defaultCountry = 'ES';
 const String defaultUserLocale = 'es_ES';
 
+//Tasks
+const double roundCornerForTask = 45;
+
 //Theme
 const String defaultTheme = 'light';
 

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:ui_ux_designs/common/app/constants/assets.dart';
+import 'package:ui_ux_designs/src/common/app/constants/assets.dart';
 import 'package:ui_ux_designs/src/common/app/routes/app_pages.dart';
 
 class HomePageController extends GetxController {
@@ -9,6 +9,10 @@ class HomePageController extends GetxController {
     (
       Assets.assetsSvgsPokemon,
       'app.pokedex'.tr,
+    ),
+    (
+      Assets.assetsSvgsTaskSquare,
+      'app.tasks'.tr,
     ),
   ];
 
@@ -23,6 +27,10 @@ class HomePageController extends GetxController {
       case 0:
         await Get.toNamed(
           Routes.pokedexHome,
+        );
+      case 1:
+        await Get.toNamed(
+          Routes.tasksHome,
         );
     }
   }

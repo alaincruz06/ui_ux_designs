@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ui_ux_designs/common/app/constants/assets.dart';
 import 'package:ui_ux_designs/src/1_pokedex/core/pokemon_utils.dart';
 import 'package:ui_ux_designs/src/1_pokedex/domain/domain_models/pokemon_domain.dart';
+import 'package:ui_ux_designs/src/common/app/constants/assets.dart';
 import 'package:ui_ux_designs/src/common/app/theme/colors.dart';
 import 'package:ui_ux_designs/src/common/app/theme/text_styles.dart';
 import 'package:ui_ux_designs/src/common/presentation/widgets/images/cache_network_image_widget_with_shimmer.dart';

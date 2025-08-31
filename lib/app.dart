@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ui_ux_designs/src/common/app/lang/translation_helper.dart';
 import 'package:ui_ux_designs/src/common/app/routes/app_pages.dart';
-import 'package:ui_ux_designs/src/common/app/theme/colors.dart';
 import 'package:ui_ux_designs/src/common/presentation/widgets/loading_overlay.dart';
 import 'package:ui_ux_designs/src/common/utils/constants.dart';
 import 'package:ui_ux_designs/src/common/utils/language_controller.dart';
@@ -46,11 +45,6 @@ class _MyAppState extends State<MyApp> {
             getPages: AppPages.routes,
             defaultTransition: Transition.cupertino,
             navigatorKey: navigatorKey,
-            theme: ThemeData(
-              colorScheme:
-                  ColorScheme.fromSeed(seedColor: AppColors.primary600),
-              useMaterial3: true,
-            ),
           ),
         ),
       ),

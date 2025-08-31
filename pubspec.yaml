@@ -15,27 +15,41 @@ dependencies:
   dio_logs_manager: ^0.3.0
   envied: ^0.5.4+1
   equatable: ^2.0.5
+  file_picker: 5.5.0
   flutter:
     sdk: flutter
+  flutter_advanced_calendar:
+    git:
+      url: https://github.com/alaincruz06/flutter_advanced_calendar.git
+      ref: master
+  flutter_contacts: ^1.1.9+2
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.4.0
   flutter_screenutil: ^5.9.1
   flutter_svg: 2.0.10+1
   get: 4.6.6
   get_storage: 2.1.1
   infinite_scroll_pagination: 4.0.0
-  intl: 0.19.0
+  intl: ^0.19.0
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
   loader_overlay: 4.0.0
   logger: ^2.3.0
   package_info_plus: ^8.0.0
   palette_generator: ^0.3.3+4
+  path_provider: ^2.1.4
   permission_handler: 11.3.1
   pretty_dio_logger: ^1.4.0
   share_plus: ^9.0.0
   shared_preferences: ^2.2.3
+  syncfusion_flutter_datepicker: ^27.2.2
   shimmer: 3.0.0
   smartstruct: 1.4.0
   url_launcher: ^6.2.6
+
+# dependency_overrides:
+# intl: 0.19.0
 
 dev_dependencies:
   build_runner: ^2.4.11
@@ -44,11 +58,12 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
+  isar_generator: ^3.1.0+1
   smartstruct_generator: 1.4.0
 
 flutter_assets:
   assets_path: assets/
-  output_path: lib/common/app/constants/
+  output_path: lib/src/common/app/constants/
   filename: assets.dart
 
 # The following section is specific to Flutter packages.
@@ -57,6 +72,42 @@ flutter:
 
   assets:
     - assets/
+    - assets/fonts/
+    - assets/fonts/Bambino/
     - assets/icons/
     - assets/images/
     - assets/svgs/
+
+  fonts:
+    - family: Bambino
+      fonts:
+        - asset: assets/fonts/Bambino/Bambino.ttf
+    - family: Bambino-black
+      fonts:
+        - asset: assets/fonts/Bambino/Bambino_Black.ttf
+    - family: Bambino-bold
+      fonts:
+        - asset: assets/fonts/Bambino/Bambino_Bold.ttf
+    - family: Bambino-light
+      fonts:
+        - asset: assets/fonts/Bambino/Bambino_Light.ttf
+    - family: Bambino-thin
+      fonts:
+        - asset: assets/fonts/Bambino/Bambino_Thin.ttf
+
+# Generate launcher icons settings
+# run this: flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icons/icons8-pi-100.png"
+  image_path_ios: "assets/icons/icons8-pi-100.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+# Splash Generator
+# run this: flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/icons/icons8-pi-100.png
+  web: false
